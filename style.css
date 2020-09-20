@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cute Font', cursive;
+    font-family: 'Special Elite', cursive;
+}
+.wrapped{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/mainbg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    padding:20px 20px;
+    
+}
+.logo{
+    width: auto ;
+    height: 120px;
+    padding: 10px;
+}
+.navbar ul{
+    float:right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 10px;
+    display: inline-block;
+    line-height: 38px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px;
+    font-family: sans-serif;
+    font-style: oblique
+}
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellow;
+    display: block;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.wrapper .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+.center h1{
+    color: #fff;
+    font-size: 60px;
+    margin: 80px 130px;
+    width: 900px;
+    font-weight: bold;
+}
+.center h2{
+    color:yellow;
+    font-size: 45px;
+    font-weight:lighter;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 200px;
+    font-size:80;
+}
+.btn-full{
+    background-color: yellowgreen;
+    margin-right: 15px;
+    background-color: transparent;
+    border: 1px solid yellow;
+}
+.btn-full:hover{
+    background-color: darkred;
+}
+.btn-nav{
+    background-color: yellow;
+    margin-right: 15px;
+    background-color: transparent;
+    border: 1px solid yellow;
+}
+.btn-nav:hover{
+    background-color: white;
+}
+.colorchange{
+    animation: colorchangewake 1s infinite;
+    font-family: 'Dancing Script', cursive;
+}
+@keyframes colorchangewake{
+    0%{color: white}
+    25%{color:red}
+    50%{color: green}
+    100%{color:yellow}
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.extra-div h2{
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+/*******************extra header div css start*****************/
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra-div{
+    background: white;
+    border: medium none;
+    padding: 50px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    transform: translateY(-20px);
+}
+/*******************extra header div css end*****************/
+.project-work{
+    margin: 100px 0;
+}
+.project-works h1{
+    font-size: 2rem;
+    text-align: center;
+}
+/******************TESTIMONIALS*****************/
+.happyclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 3px;
+    transition:  0.3s ease;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px! important;
+    
+}
+.carousel-indicators li{
+    background-color: deeppink!important;
+}
+.box a {
+    position: relative;
+}
+.box p{
+    font-family: sans-serif;
+    word-spacing: normal;
+}
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.box a:after{
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+.box h1{
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+}
+.box h2{
+    font-size: 15px;
+    font-weight: 400px;
+    color: #666666;
+    margin-bottom: 20px;
+    
+}
+/******************TESTIMONIALS*****************/
+/**************footer-starts*******************/
+.full-footer{
+    background-color: #243c4f;
+    width: 100%;
+}
+.top-footer p{
+    color: white;
+    margin-top: 10px;
+}
+.w{
+    width: 30%;
+    
+}
+.top-footer a{
+    color: white;
+    padding-top: 30px;
+}
+.top-footer h3{
+    color: white;
+}
+.bottom-footer{
+    background-color: #031b2e;
+}
+.bottom-footer p{
+    color: white;
+}
+/**************footer-ENDs*******************/
+/**************NEWSLETTER SECTION************/
+.home-newsletter{
+    background-color: #004d80;
+    color: white;
+}
+.home-newsletter .form-control {
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    border-color: transparent;
+}
+.home-newsletter .btn{
+    min-height: 40px;
+    border-radius: 0 20px 20px 0;
+    background: magenta;
+    color: #fff;
+}
+/***************Contact Us********************/
+.address{
+    color: white;
+    font-family: monospace;
+}
+.address p{
+    
+}
+.col-12 h2{
+    color: white;
+    padding-left: 35px;
+}
+.col-12 p {
+    color: cornflowerblue;
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+/***************Contact Us ENDS********************/
+.col-md-9 p {
+    color: yellow;
+}
+/*******************Our Team*********************/
+.container h1{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+}
+.profile{
+    margin-top: 25px;
+}
+.profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.profile h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.img-box:after{
+    content: '';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom; 0;
+    width:auto;
+    height: 100px;
+}
+.img-box ul{
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+}
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;    
+}
+.img-responsive {
+    width: 250px;
+    height: 300px;
+    margin: 3px;    
+}
+/**************store****************/
+
+.store{
+    background: grey;
+}
+.search-box{
+    background: pink;
+    color: black;    
+}
+.btn-black {
+    font-size: 1.5rem;
+    color: black;
+    border: 0.2rem solid black;
+}
+.btn-black:hover {
+   background: pink;
+}
+.single-item{
+    transition: all 0.3 linear;    
+}
+.single-item:hover{
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+.img-container{
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.store-img {
+    transition: all 1s ease-in-out;    
+}
+.img-container:hover .store-img{
+    transform: scale(1.2);
+}
+/******************blogs******************/
+.blog_left__div h1{
+   font-weight: bold;
+   font-size: 3rem; 
+}
+.blog_left__div .blog_title{
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+.blog_left__div .blog_title span{
+    color: #1b262c;
+}
+.img-fluid{
+    ;
+}
+.left_div_btns{
+    margin-top: 3rem;
+    transition: .3s all ease;
+}
+.left_div_like{
+    color: blue;
+    border-width: .2rem;
+    font-size: 1rem;
+    transition: .3s all ease;
+    outline: none;
+}
+.left_div_like{
+    color: blue;
+    border-width: .2rem;
+    font-size: 1rem;
+    transition: .3s all ease;
+    outline: none;
+}
+.replies {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    transition: .3s all ease;
+    display: none;
+}
+.logger{
+    color: white;
+}
+.v8{
+    color: white;
+}
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
